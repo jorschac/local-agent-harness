@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.work/
+.env
+.env.*
+*.sqlite3*
+*.key
+*.log
+.DS_Store
+.harness/
+secrets/
+chrome-profile/
+node_modules/
+*.zip
+*.tar.xz

@@ -1,0 +1,46 @@
+manifest_version: 2
+name: arithmetic
+version: 1.0.0
+description: >-
+  Independent bounded Decimal arithmetic and recursive-descent expression parsing.
+  Arithmetic tasks must use these tools, never mental arithmetic or browser_eval.
+kind: standalone
+provides_tools:
+  - arithmetic_add
+  - arithmetic_subtract
+  - arithmetic_multiply
+  - arithmetic_divide
+  - arithmetic_parse
+provides_hooks: []
+requires_env: []
+config_schema:
+  precision:
+    type: integer
+    default: 50
+    minimum: 2
+    maximum: 100
+    description: Decimal significant-digit precision; rounded half-even when needed.
+  max_expression_length:
+    type: integer
+    default: 4096
+    minimum: 1
+    maximum: 16384
+    description: Maximum expression characters, including whitespace.
+  max_tokens:
+    type: integer
+    default: 1024
+    minimum: 1
+    maximum: 4096
+    description: Maximum lexical tokens, excluding end of input.
+  max_depth:
+    type: integer
+    default: 64
+    minimum: 1
+    maximum: 128
+    description: Maximum syntax nesting and AST depth.
+  max_number_digits:
+    type: integer
+    default: 128
+    minimum: 1
+    maximum: 256
+    description: Maximum decimal digits in each input literal or operand.

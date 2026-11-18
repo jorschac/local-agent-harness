@@ -1,0 +1,26 @@
+{
+  "model": "deepseek/deepseek-v4.1-flash-1017",
+  "started_at": 1794980553.64891,
+  "request_parameters": "current Harness provider; no explicit reasoning override",
+  "source_config_changed": false,
+  "passed": true,
+  "final": "工具计算结果为 5.85。",
+  "usage": {
+    "prompt_tokens": 2901,
+    "completion_tokens": 94,
+    "total_tokens": 2995,
+    "cost": 0.00012148399999999999
+  },
+  "tool_calls": 1,
+  "rounds": 2,
+  "event_types": [
+    "run.queued",
+    "provider.request",
+    "tool.intent",
+    "tool.started",
+    "tool.result",
+    "provider.request",
+    "assistant.final"
+  ],
+  "finished_at": 1794980559.440851
+}

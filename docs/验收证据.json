@@ -1,0 +1,3885 @@
+{
+  "summary": {
+    "passed": true,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "sdk_nonstream": {
+      "text": "SDK非流验收成功",
+      "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 17,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null,
+        "cost": 4.83e-06
+      }
+    },
+    "sdk_stream": {
+      "text": "SDK流验收成功",
+      "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+      "chunk_count": 4,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 16,
+        "total_tokens": 21,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null,
+        "cost": 4.19e-06
+      }
+    },
+    "chat_runs": [
+      {
+        "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+        "session_id": "session_bae4575b81854b80bf84b1ad419ca4bc",
+        "status": "completed",
+        "rounds": 1,
+        "tools": [],
+        "cost": 4.83e-06,
+        "final": "SDK非流验收成功"
+      },
+      {
+        "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+        "session_id": "session_e8f90e77ce34450783386bb913f6a9e4",
+        "status": "completed",
+        "rounds": 1,
+        "tools": [],
+        "cost": 4.19e-06,
+        "final": "SDK流验收成功"
+      },
+      {
+        "run_id": "run_a98533e953d540759ba604be48bb057b",
+        "session_id": "session_7231c1ac524e475bbe9e723115bd332d",
+        "status": "completed",
+        "rounds": 2,
+        "tools": [
+          "arithmetic_parse"
+        ],
+        "cost": 0.00027765,
+        "final": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。"
+      },
+      {
+        "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+        "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+        "status": "completed",
+        "rounds": 6,
+        "tools": [
+          "arithmetic_parse",
+          "browser_open",
+          "browser_navigate",
+          "browser_eval",
+          "browser_extract",
+          "browser_status"
+        ],
+        "cost": 0.0018738000000000001,
+        "final": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。"
+      },
+      {
+        "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+        "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+        "status": "completed",
+        "rounds": 3,
+        "tools": [
+          "browser_close",
+          "browser_release"
+        ],
+        "cost": 0.00103146,
+        "final": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。"
+      },
+      {
+        "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+        "session_id": "session_1c1d3156e8ad43fc8a2e93cf5fbe7dbe",
+        "status": "completed",
+        "rounds": 2,
+        "tools": [
+          "arithmetic_parse"
+        ],
+        "cost": 0.00028372,
+        "final": "根据工具计算结果，表达式 $(35 \\times 7 - 128) \\div (12 + 8)$ 的答案是：\n\n$$\n\\boxed{5.85}\n$$"
+      }
+    ],
+    "observed_cost_usd": "0.0034756500000000001",
+    "model_requests": 15,
+    "headed_window": {
+      "windowId": 1028106094,
+      "bounds": {
+        "left": 22,
+        "top": 55,
+        "width": 1200,
+        "height": 905,
+        "windowState": "normal"
+      }
+    },
+    "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+    "syntax_error": {
+      "code": "syntax_error",
+      "message": "Expected a number, unary sign or opening parenthesis",
+      "execution": {
+        "tool": "arithmetic_parse",
+        "precision": 50
+      },
+      "position": 9
+    },
+    "unreclaimed": [],
+    "cli_math_passed": true,
+    "disable_and_override_passed": true,
+    "restart": {
+      "passed": true,
+      "previous_instance_id": "14c228ea7f544b2aa65f7b70594bad31",
+      "current_status": {
+        "instance_id": "0abd19ed4a6b4d90ac7d4ead49065fbb",
+        "pid": 15039,
+        "ready": true,
+        "busy": false,
+        "draining": false,
+        "config_revision": 8,
+        "active_run": null
+      },
+      "config_revision": 8,
+      "preserved_runs": [
+        {
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "preserved": true
+        },
+        {
+          "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+          "preserved": true
+        },
+        {
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "preserved": true
+        },
+        {
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "preserved": true
+        },
+        {
+          "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+          "preserved": true
+        }
+      ]
+    },
+    "final_service": {
+      "instance_id": "0abd19ed4a6b4d90ac7d4ead49065fbb",
+      "pid": 15039,
+      "ready": true,
+      "busy": false,
+      "draining": false,
+      "config_revision": 8,
+      "active_run": null
+    },
+    "registered_tool_names": [
+      "arithmetic_add",
+      "arithmetic_subtract",
+      "arithmetic_multiply",
+      "arithmetic_divide",
+      "arithmetic_parse",
+      "browser_open",
+      "browser_navigate",
+      "browser_eval",
+      "browser_extract",
+      "browser_close",
+      "browser_status",
+      "browser_release"
+    ]
+  },
+  "live": {
+    "started_at": 1794979189.394787,
+    "runs": [
+      {
+        "id": "run_a98533e953d540759ba604be48bb057b",
+        "kind": "chat",
+        "session_id": "session_7231c1ac524e475bbe9e723115bd332d",
+        "status": "completed",
+        "created_at": 1794979201.555914,
+        "started_at": 1794979201.5563571,
+        "finished_at": 1794979206.036271,
+        "input": {
+          "model": "harness-default",
+          "messages": [
+            {
+              "role": "user",
+              "content": "必须调用 arithmetic_parse 工具计算 (35 × 7 - 128) ÷ (12 + 8)，expression 必须原样输入。只在收到工具结果后给出答案，不心算、不用任何eval。"
+            }
+          ],
+          "stream": false,
+          "n": 1,
+          "harness_plugins": [
+            "arithmetic"
+          ]
+        },
+        "result": {
+          "id": "chatcmpl-run_a98533e953d540759ba604be48bb057b",
+          "object": "chat.completion",
+          "created": 1794979206,
+          "model": "harness-default",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 2645,
+            "completion_tokens": 72,
+            "total_tokens": 2717,
+            "cost": 0.00027765
+          }
+        },
+        "error": null,
+        "idempotency_key": "0de48497-b057-42c1-9e69-74d98376fee2",
+        "fingerprint": "1bb08466bbf4fdf63524b78bf4dc6543555748118918e0978a27632f86780c52",
+        "tool_calls": 1,
+        "cancel_requested": false,
+        "cost": 0.00027765,
+        "run_id": "run_a98533e953d540759ba604be48bb057b",
+        "events_url": "/api/runs/run_a98533e953d540759ba604be48bb057b/events",
+        "status_url": "/api/runs/run_a98533e953d540759ba604be48bb057b",
+        "events": [
+          {
+            "id": 15,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "run.queued",
+            "data": {
+              "status": "queued",
+              "session_id": "session_7231c1ac524e475bbe9e723115bd332d",
+              "kind": "chat"
+            },
+            "created_at": 1794979201.5560262
+          },
+          {
+            "id": 16,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "run.started",
+            "data": {
+              "status": "running",
+              "kind": "chat"
+            },
+            "created_at": 1794979201.556448
+          },
+          {
+            "id": 17,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "provider.request",
+            "data": {
+              "round": 1,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse"
+              ]
+            },
+            "created_at": 1794979201.564641
+          },
+          {
+            "id": 18,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_a7ef",
+              "name": "arithmetic_parse",
+              "arguments": {
+                "expression": "(35 × 7 - 128) ÷ (12 + 8)"
+              },
+              "intent_id": 1
+            },
+            "created_at": 1794979204.379759
+          },
+          {
+            "id": 19,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_a7ef",
+              "name": "arithmetic_parse",
+              "tool_calls": 1
+            },
+            "created_at": 1794979204.380228
+          },
+          {
+            "id": 20,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_a7ef",
+              "name": "arithmetic_parse",
+              "result": {
+                "type": "expression",
+                "syntax_type": "binary",
+                "ast": {
+                  "type": "binary",
+                  "position": 15,
+                  "operator": "/",
+                  "left": {
+                    "type": "binary",
+                    "position": 8,
+                    "operator": "-",
+                    "left": {
+                      "type": "binary",
+                      "position": 4,
+                      "operator": "*",
+                      "left": {
+                        "type": "number",
+                        "position": 1,
+                        "value": "35"
+                      },
+                      "right": {
+                        "type": "number",
+                        "position": 6,
+                        "value": "7"
+                      }
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 10,
+                      "value": "128"
+                    }
+                  },
+                  "right": {
+                    "type": "binary",
+                    "position": 21,
+                    "operator": "+",
+                    "left": {
+                      "type": "number",
+                      "position": 18,
+                      "value": "12"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 23,
+                      "value": "8"
+                    }
+                  }
+                },
+                "result": "5.85",
+                "steps": [
+                  {
+                    "index": 1,
+                    "type": "binary",
+                    "operation": "multiply",
+                    "operator": "*",
+                    "operands": [
+                      "35",
+                      "7"
+                    ],
+                    "result": "245",
+                    "position": 4
+                  },
+                  {
+                    "index": 2,
+                    "type": "binary",
+                    "operation": "subtract",
+                    "operator": "-",
+                    "operands": [
+                      "245",
+                      "128"
+                    ],
+                    "result": "117",
+                    "position": 8
+                  },
+                  {
+                    "index": 3,
+                    "type": "binary",
+                    "operation": "add",
+                    "operator": "+",
+                    "operands": [
+                      "12",
+                      "8"
+                    ],
+                    "result": "20",
+                    "position": 21
+                  },
+                  {
+                    "index": 4,
+                    "type": "binary",
+                    "operation": "divide",
+                    "operator": "/",
+                    "operands": [
+                      "117",
+                      "20"
+                    ],
+                    "result": "5.85",
+                    "position": 15
+                  }
+                ],
+                "precision": 50,
+                "rounding": "ROUND_HALF_EVEN",
+                "execution": {
+                  "tool": "arithmetic_parse",
+                  "precision": 50
+                }
+              }
+            },
+            "created_at": 1794979204.3814359
+          },
+          {
+            "id": 21,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "provider.request",
+            "data": {
+              "round": 2,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse"
+              ]
+            },
+            "created_at": 1794979204.381641
+          },
+          {
+            "id": 22,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "assistant.final",
+            "data": {
+              "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。",
+              "finish_reason": "stop"
+            },
+            "created_at": 1794979206.0360918
+          },
+          {
+            "id": 23,
+            "run_id": "run_a98533e953d540759ba604be48bb057b",
+            "type": "run.completed",
+            "data": {
+              "status": "completed",
+              "result": {
+                "id": "chatcmpl-run_a98533e953d540759ba604be48bb057b",
+                "object": "chat.completion",
+                "created": 1794979206,
+                "model": "harness-default",
+                "choices": [
+                  {
+                    "index": 0,
+                    "message": {
+                      "role": "assistant",
+                      "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。"
+                    },
+                    "finish_reason": "stop"
+                  }
+                ],
+                "usage": {
+                  "prompt_tokens": 2645,
+                  "completion_tokens": 72,
+                  "total_tokens": 2717,
+                  "cost": 0.00027765
+                }
+              },
+              "tool_calls": 1,
+              "cost": 0.00027765
+            },
+            "created_at": 1794979206.0364559
+          }
+        ]
+      },
+      {
+        "id": "run_d859b1dce7854d1c8cb3b275707e0610",
+        "kind": "tool",
+        "session_id": "local-direct",
+        "status": "completed",
+        "created_at": 1794979206.050782,
+        "started_at": 1794979206.051401,
+        "finished_at": 1794979206.061033,
+        "input": {
+          "name": "arithmetic_parse",
+          "arguments": {
+            "expression": "(35 × 7 -) ÷ (12 + 8)"
+          },
+          "harness_plugins": [
+            "arithmetic"
+          ]
+        },
+        "result": {
+          "kind": "tool",
+          "name": "arithmetic_parse",
+          "result": {
+            "error": {
+              "code": "syntax_error",
+              "message": "Expected a number, unary sign or opening parenthesis",
+              "execution": {
+                "tool": "arithmetic_parse",
+                "precision": 50
+              },
+              "position": 9
+            }
+          }
+        },
+        "error": null,
+        "idempotency_key": "9928d3e9-b108-49f8-b041-1f24d8809432",
+        "fingerprint": "dac9e88f7fb81bf7c2e901131fe3967f4b25ab3979a99704e545aa014f120c33",
+        "tool_calls": 1,
+        "cancel_requested": false,
+        "cost": null,
+        "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+        "events_url": "/api/runs/run_d859b1dce7854d1c8cb3b275707e0610/events",
+        "status_url": "/api/runs/run_d859b1dce7854d1c8cb3b275707e0610",
+        "events": [
+          {
+            "id": 24,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "run.queued",
+            "data": {
+              "status": "queued",
+              "session_id": "local-direct",
+              "kind": "tool"
+            },
+            "created_at": 1794979206.051015
+          },
+          {
+            "id": 25,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "run.started",
+            "data": {
+              "status": "running",
+              "kind": "tool"
+            },
+            "created_at": 1794979206.0514922
+          },
+          {
+            "id": 26,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "direct-run_d859b1dce7854d1c8cb3b275707e0610",
+              "name": "arithmetic_parse",
+              "arguments": {
+                "expression": "(35 × 7 -) ÷ (12 + 8)"
+              },
+              "intent_id": 2
+            },
+            "created_at": 1794979206.059508
+          },
+          {
+            "id": 27,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "tool.started",
+            "data": {
+              "call_id": "direct-run_d859b1dce7854d1c8cb3b275707e0610",
+              "name": "arithmetic_parse",
+              "tool_calls": 1
+            },
+            "created_at": 1794979206.060029
+          },
+          {
+            "id": 28,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "tool.result",
+            "data": {
+              "call_id": "direct-run_d859b1dce7854d1c8cb3b275707e0610",
+              "name": "arithmetic_parse",
+              "result": {
+                "error": {
+                  "code": "syntax_error",
+                  "message": "Expected a number, unary sign or opening parenthesis",
+                  "execution": {
+                    "tool": "arithmetic_parse",
+                    "precision": 50
+                  },
+                  "position": 9
+                }
+              }
+            },
+            "created_at": 1794979206.06074
+          },
+          {
+            "id": 29,
+            "run_id": "run_d859b1dce7854d1c8cb3b275707e0610",
+            "type": "run.completed",
+            "data": {
+              "status": "completed",
+              "result": {
+                "kind": "tool",
+                "name": "arithmetic_parse",
+                "result": {
+                  "error": {
+                    "code": "syntax_error",
+                    "message": "Expected a number, unary sign or opening parenthesis",
+                    "execution": {
+                      "tool": "arithmetic_parse",
+                      "precision": 50
+                    },
+                    "position": 9
+                  }
+                }
+              },
+              "tool_calls": 1,
+              "cost": null
+            },
+            "created_at": 1794979206.0612428
+          }
+        ]
+      },
+      {
+        "id": "run_65ca2749d784492ab50bcb5544b8844c",
+        "kind": "chat",
+        "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+        "status": "completed",
+        "created_at": 1794979206.23699,
+        "started_at": 1794979206.237729,
+        "finished_at": 1794979222.606384,
+        "input": {
+          "model": "harness-default",
+          "messages": [
+            {
+              "role": "user",
+              "content": "这是已授权本地验收。第一轮调用 arithmetic_parse 计算 (35 × 7 - 128) ÷ (12 + 8)，同时调用 browser_open 创建一个 about:blank 自有测试页。拿到target_id后，必须 browser_navigate 在该原tab导航到 http://127.0.0.1:57242/，不能再open。然后 browser_eval 编译执行以下原样JS：document.querySelector('#message').value='Harness live CDP verified'; document.querySelector('#apply').click(); document.querySelector('#result').textContent。如果页面还未加载允许一次重试eval。接着 browser_extract max_chars=4000，再 browser_status 查看全浏览器快照。不要关闭页面，留给独立截图核验；不要release。最终简短报告算术工具结果和页面result文本，不心算。"
+            }
+          ],
+          "stream": false,
+          "n": 1,
+          "harness_plugins": [
+            "arithmetic",
+            "browser-safety"
+          ]
+        },
+        "result": {
+          "id": "chatcmpl-run_65ca2749d784492ab50bcb5544b8844c",
+          "object": "chat.completion",
+          "created": 1794979222,
+          "model": "harness-default",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 18895,
+            "completion_tokens": 315,
+            "total_tokens": 19210,
+            "cost": 0.0018738000000000001
+          }
+        },
+        "error": null,
+        "idempotency_key": "893297ab-42c9-4b9b-9489-537f39c115ac",
+        "fingerprint": "8aa34a0e65a74a1f6ccb793837ea9552d946a6bb4bb1acd50b7f6ab295582a26",
+        "tool_calls": 6,
+        "cancel_requested": false,
+        "cost": 0.0018738000000000001,
+        "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+        "events_url": "/api/runs/run_65ca2749d784492ab50bcb5544b8844c/events",
+        "status_url": "/api/runs/run_65ca2749d784492ab50bcb5544b8844c",
+        "events": [
+          {
+            "id": 30,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "run.queued",
+            "data": {
+              "status": "queued",
+              "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+              "kind": "chat"
+            },
+            "created_at": 1794979206.2373319
+          },
+          {
+            "id": 31,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "run.started",
+            "data": {
+              "status": "running",
+              "kind": "chat"
+            },
+            "created_at": 1794979206.237823
+          },
+          {
+            "id": 32,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 1,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979206.265391
+          },
+          {
+            "id": 33,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_0ab6",
+              "name": "arithmetic_parse",
+              "arguments": {
+                "expression": "(35 × 7 - 128) ÷ (12 + 8)"
+              },
+              "intent_id": 3
+            },
+            "created_at": 1794979209.7721019
+          },
+          {
+            "id": 34,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_0ab6",
+              "name": "arithmetic_parse",
+              "tool_calls": 1
+            },
+            "created_at": 1794979209.7730749
+          },
+          {
+            "id": 35,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_0ab6",
+              "name": "arithmetic_parse",
+              "result": {
+                "type": "expression",
+                "syntax_type": "binary",
+                "ast": {
+                  "type": "binary",
+                  "position": 15,
+                  "operator": "/",
+                  "left": {
+                    "type": "binary",
+                    "position": 8,
+                    "operator": "-",
+                    "left": {
+                      "type": "binary",
+                      "position": 4,
+                      "operator": "*",
+                      "left": {
+                        "type": "number",
+                        "position": 1,
+                        "value": "35"
+                      },
+                      "right": {
+                        "type": "number",
+                        "position": 6,
+                        "value": "7"
+                      }
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 10,
+                      "value": "128"
+                    }
+                  },
+                  "right": {
+                    "type": "binary",
+                    "position": 21,
+                    "operator": "+",
+                    "left": {
+                      "type": "number",
+                      "position": 18,
+                      "value": "12"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 23,
+                      "value": "8"
+                    }
+                  }
+                },
+                "result": "5.85",
+                "steps": [
+                  {
+                    "index": 1,
+                    "type": "binary",
+                    "operation": "multiply",
+                    "operator": "*",
+                    "operands": [
+                      "35",
+                      "7"
+                    ],
+                    "result": "245",
+                    "position": 4
+                  },
+                  {
+                    "index": 2,
+                    "type": "binary",
+                    "operation": "subtract",
+                    "operator": "-",
+                    "operands": [
+                      "245",
+                      "128"
+                    ],
+                    "result": "117",
+                    "position": 8
+                  },
+                  {
+                    "index": 3,
+                    "type": "binary",
+                    "operation": "add",
+                    "operator": "+",
+                    "operands": [
+                      "12",
+                      "8"
+                    ],
+                    "result": "20",
+                    "position": 21
+                  },
+                  {
+                    "index": 4,
+                    "type": "binary",
+                    "operation": "divide",
+                    "operator": "/",
+                    "operands": [
+                      "117",
+                      "20"
+                    ],
+                    "result": "5.85",
+                    "position": 15
+                  }
+                ],
+                "precision": 50,
+                "rounding": "ROUND_HALF_EVEN",
+                "execution": {
+                  "tool": "arithmetic_parse",
+                  "precision": 50
+                }
+              }
+            },
+            "created_at": 1794979209.775459
+          },
+          {
+            "id": 36,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_c1ba",
+              "name": "browser_open",
+              "arguments": {
+                "url": "about:blank"
+              },
+              "intent_id": 4
+            },
+            "created_at": 1794979209.77585
+          },
+          {
+            "id": 37,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_c1ba",
+              "name": "browser_open",
+              "tool_calls": 2
+            },
+            "created_at": 1794979209.7762911
+          },
+          {
+            "id": 38,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_c1ba",
+              "name": "browser_open",
+              "result": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "url": "about:blank",
+                "owned": true,
+                "quota_used": 1,
+                "quota": 3,
+                "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+                "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+              }
+            },
+            "created_at": 1794979210.0447412
+          },
+          {
+            "id": 39,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 2,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979210.044825
+          },
+          {
+            "id": 40,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_66a1",
+              "name": "browser_navigate",
+              "arguments": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "url": "http://127.0.0.1:57242/"
+              },
+              "intent_id": 5
+            },
+            "created_at": 1794979212.953245
+          },
+          {
+            "id": 41,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_66a1",
+              "name": "browser_navigate",
+              "tool_calls": 3
+            },
+            "created_at": 1794979212.956336
+          },
+          {
+            "id": 42,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_66a1",
+              "name": "browser_navigate",
+              "result": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "navigation": {
+                  "frameId": "93C63ADE1A403D3786472647607FCA76",
+                  "loaderId": "D4B9843A25097C1B3FE66185EA052227",
+                  "isDownload": false
+                },
+                "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+              }
+            },
+            "created_at": 1794979212.997144
+          },
+          {
+            "id": 43,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 3,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979212.9976199
+          },
+          {
+            "id": 44,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_3a88",
+              "name": "browser_eval",
+              "arguments": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "script": "document.querySelector('#message').value='Harness live CDP verified'; document.querySelector('#apply').click(); document.querySelector('#result').textContent"
+              },
+              "intent_id": 6
+            },
+            "created_at": 1794979216.5801332
+          },
+          {
+            "id": 45,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_3a88",
+              "name": "browser_eval",
+              "tool_calls": 4
+            },
+            "created_at": 1794979216.5804439
+          },
+          {
+            "id": 46,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_3a88",
+              "name": "browser_eval",
+              "result": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "result": {
+                  "type": "string",
+                  "value": "Harness live CDP verified"
+                },
+                "quota_used": 1,
+                "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+              }
+            },
+            "created_at": 1794979216.603529
+          },
+          {
+            "id": 47,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 4,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979216.603727
+          },
+          {
+            "id": 48,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_54ae",
+              "name": "browser_extract",
+              "arguments": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "max_chars": 4000
+              },
+              "intent_id": 7
+            },
+            "created_at": 1794979219.252841
+          },
+          {
+            "id": 49,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_54ae",
+              "name": "browser_extract",
+              "tool_calls": 5
+            },
+            "created_at": 1794979219.2532558
+          },
+          {
+            "id": 50,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_54ae",
+              "name": "browser_extract",
+              "result": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "title": "Harness Live Acceptance",
+                "url": "http://127.0.0.1:57242/",
+                "text": "Harness Live Acceptance\n\nLocal isolated CDP browser test. No personal browser data.\n\nMessage  Apply\n\nHarness live CDP verified",
+                "max_chars": 4000,
+                "truncated": false
+              }
+            },
+            "created_at": 1794979219.276427
+          },
+          {
+            "id": 51,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 5,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979219.276564
+          },
+          {
+            "id": 52,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_82d7",
+              "name": "browser_status",
+              "arguments": {},
+              "intent_id": 8
+            },
+            "created_at": 1794979220.638171
+          },
+          {
+            "id": 53,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_82d7",
+              "name": "browser_status",
+              "tool_calls": 6
+            },
+            "created_at": 1794979220.638638
+          },
+          {
+            "id": 54,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_82d7",
+              "name": "browser_status",
+              "result": {
+                "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+                "session_status": "active",
+                "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+                "targets": [
+                  {
+                    "targetId": "964DF58E9CF0DA3B27B595B520EC88B5",
+                    "type": "browser_ui",
+                    "title": "Omnibox Popup",
+                    "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+                    "attached": false,
+                    "canAccessOpener": false,
+                    "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                    "ownership": "foreign",
+                    "owner_session_id": null
+                  },
+                  {
+                    "targetId": "D15C01DF792F2D4C40DF71F45B4655C2",
+                    "type": "page",
+                    "title": "about:blank",
+                    "url": "about:blank",
+                    "attached": false,
+                    "canAccessOpener": false,
+                    "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                    "ownership": "foreign",
+                    "owner_session_id": null
+                  },
+                  {
+                    "targetId": "078BF86AC1F25B40BFED235C20858628",
+                    "type": "browser_ui",
+                    "title": "Omnibox Popup",
+                    "url": "chrome://omnibox-popup.top-chrome/",
+                    "attached": false,
+                    "canAccessOpener": false,
+                    "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                    "ownership": "foreign",
+                    "owner_session_id": null
+                  },
+                  {
+                    "targetId": "93C63ADE1A403D3786472647607FCA76",
+                    "type": "page",
+                    "title": "Harness Live Acceptance",
+                    "url": "http://127.0.0.1:57242/",
+                    "attached": false,
+                    "canAccessOpener": false,
+                    "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                    "ownership": "self",
+                    "owner_session_id": "session_d771cb6690854a04ba20dd92291cfc6a"
+                  }
+                ],
+                "owned": [
+                  {
+                    "target_id": "93C63ADE1A403D3786472647607FCA76",
+                    "instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+                    "state": "owned",
+                    "source": "open",
+                    "created_at": 1794979210.043023,
+                    "present_in_snapshot": true
+                  }
+                ],
+                "pending": [],
+                "quota": 3,
+                "quota_used": 1,
+                "quota_exceeded": false,
+                "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+              }
+            },
+            "created_at": 1794979220.653835
+          },
+          {
+            "id": 55,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "provider.request",
+            "data": {
+              "round": 6,
+              "max_tokens": 1024,
+              "tool_names": [
+                "arithmetic_add",
+                "arithmetic_subtract",
+                "arithmetic_multiply",
+                "arithmetic_divide",
+                "arithmetic_parse",
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979220.654
+          },
+          {
+            "id": 56,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "assistant.final",
+            "data": {
+              "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。",
+              "finish_reason": "stop"
+            },
+            "created_at": 1794979222.606255
+          },
+          {
+            "id": 57,
+            "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+            "type": "run.completed",
+            "data": {
+              "status": "completed",
+              "result": {
+                "id": "chatcmpl-run_65ca2749d784492ab50bcb5544b8844c",
+                "object": "chat.completion",
+                "created": 1794979222,
+                "model": "harness-default",
+                "choices": [
+                  {
+                    "index": 0,
+                    "message": {
+                      "role": "assistant",
+                      "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。"
+                    },
+                    "finish_reason": "stop"
+                  }
+                ],
+                "usage": {
+                  "prompt_tokens": 18895,
+                  "completion_tokens": 315,
+                  "total_tokens": 19210,
+                  "cost": 0.0018738000000000001
+                }
+              },
+              "tool_calls": 6,
+              "cost": 0.0018738000000000001
+            },
+            "created_at": 1794979222.6065762
+          }
+        ]
+      },
+      {
+        "id": "run_63e156ec1e584553b881c870d9ae15b0",
+        "kind": "chat",
+        "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+        "status": "completed",
+        "created_at": 1794979222.879703,
+        "started_at": 1794979222.880024,
+        "finished_at": 1794979231.8849,
+        "input": {
+          "model": "harness-default",
+          "messages": [
+            {
+              "role": "user",
+              "content": "现在独立截图核验已结束。只调用 browser_close 关闭我们刚才的target_id=93C63ADE1A403D3786472647607FCA76，确认closed:true；再调用 browser_release。汇报 unreclaimed，不能关闭foreign页。"
+            }
+          ],
+          "stream": false,
+          "n": 1,
+          "harness_plugins": [
+            "browser-safety"
+          ]
+        },
+        "result": {
+          "id": "chatcmpl-run_63e156ec1e584553b881c870d9ae15b0",
+          "object": "chat.completion",
+          "created": 1794979231,
+          "model": "harness-default",
+          "choices": [
+            {
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。"
+              },
+              "finish_reason": "stop"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 10874,
+            "completion_tokens": 96,
+            "total_tokens": 10970,
+            "cost": 0.00103146
+          }
+        },
+        "error": null,
+        "idempotency_key": "c4161767-7c75-4863-994b-76898ce1daa3",
+        "fingerprint": "5faf03fdb15793bf8495333f65a3b0e8020111864e79ee14b738da9b6ef08a32",
+        "tool_calls": 2,
+        "cancel_requested": false,
+        "cost": 0.00103146,
+        "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+        "events_url": "/api/runs/run_63e156ec1e584553b881c870d9ae15b0/events",
+        "status_url": "/api/runs/run_63e156ec1e584553b881c870d9ae15b0",
+        "events": [
+          {
+            "id": 58,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "run.queued",
+            "data": {
+              "status": "queued",
+              "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+              "kind": "chat"
+            },
+            "created_at": 1794979222.8798149
+          },
+          {
+            "id": 59,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "run.started",
+            "data": {
+              "status": "running",
+              "kind": "chat"
+            },
+            "created_at": 1794979222.880079
+          },
+          {
+            "id": 60,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "provider.request",
+            "data": {
+              "round": 1,
+              "max_tokens": 1024,
+              "tool_names": [
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979222.8858528
+          },
+          {
+            "id": 61,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_27de",
+              "name": "browser_close",
+              "arguments": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76"
+              },
+              "intent_id": 9
+            },
+            "created_at": 1794979228.767702
+          },
+          {
+            "id": 62,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_27de",
+              "name": "browser_close",
+              "tool_calls": 1
+            },
+            "created_at": 1794979228.76806
+          },
+          {
+            "id": 63,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_27de",
+              "name": "browser_close",
+              "result": {
+                "target_id": "93C63ADE1A403D3786472647607FCA76",
+                "closed": true,
+                "quota_used": 0
+              }
+            },
+            "created_at": 1794979228.783257
+          },
+          {
+            "id": 64,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "provider.request",
+            "data": {
+              "round": 2,
+              "max_tokens": 1024,
+              "tool_names": [
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979228.7833369
+          },
+          {
+            "id": 65,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "call_86f3",
+              "name": "browser_release",
+              "arguments": {},
+              "intent_id": 10
+            },
+            "created_at": 1794979230.2595708
+          },
+          {
+            "id": 66,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.started",
+            "data": {
+              "call_id": "call_86f3",
+              "name": "browser_release",
+              "tool_calls": 2
+            },
+            "created_at": 1794979230.2604291
+          },
+          {
+            "id": 67,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "tool.result",
+            "data": {
+              "call_id": "call_86f3",
+              "name": "browser_release",
+              "result": {
+                "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+                "session_status": "stopping",
+                "closed": [],
+                "unreclaimed": [],
+                "failures": [],
+                "quota_used": 0,
+                "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+              }
+            },
+            "created_at": 1794979230.2746382
+          },
+          {
+            "id": 68,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "provider.request",
+            "data": {
+              "round": 3,
+              "max_tokens": 1024,
+              "tool_names": [
+                "browser_open",
+                "browser_navigate",
+                "browser_eval",
+                "browser_extract",
+                "browser_close",
+                "browser_status",
+                "browser_release"
+              ]
+            },
+            "created_at": 1794979230.274762
+          },
+          {
+            "id": 69,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "assistant.final",
+            "data": {
+              "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。",
+              "finish_reason": "stop"
+            },
+            "created_at": 1794979231.8847601
+          },
+          {
+            "id": 70,
+            "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+            "type": "run.completed",
+            "data": {
+              "status": "completed",
+              "result": {
+                "id": "chatcmpl-run_63e156ec1e584553b881c870d9ae15b0",
+                "object": "chat.completion",
+                "created": 1794979231,
+                "model": "harness-default",
+                "choices": [
+                  {
+                    "index": 0,
+                    "message": {
+                      "role": "assistant",
+                      "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。"
+                    },
+                    "finish_reason": "stop"
+                  }
+                ],
+                "usage": {
+                  "prompt_tokens": 10874,
+                  "completion_tokens": 96,
+                  "total_tokens": 10970,
+                  "cost": 0.00103146
+                }
+              },
+              "tool_calls": 2,
+              "cost": 0.00103146
+            },
+            "created_at": 1794979231.8851042
+          }
+        ]
+      },
+      {
+        "id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+        "kind": "tool",
+        "session_id": "local-direct",
+        "status": "completed",
+        "created_at": 1794979351.0231822,
+        "started_at": 1794979351.0234408,
+        "finished_at": 1794979351.02861,
+        "input": {
+          "name": "arithmetic_parse",
+          "arguments": {
+            "expression": "2 + 3"
+          },
+          "harness_plugins": [
+            "arithmetic"
+          ]
+        },
+        "result": {
+          "kind": "tool",
+          "name": "arithmetic_parse",
+          "result": {
+            "type": "expression",
+            "syntax_type": "binary",
+            "ast": {
+              "type": "binary",
+              "position": 2,
+              "operator": "+",
+              "left": {
+                "type": "number",
+                "position": 0,
+                "value": "2"
+              },
+              "right": {
+                "type": "number",
+                "position": 4,
+                "value": "3"
+              }
+            },
+            "result": "5",
+            "steps": [
+              {
+                "index": 1,
+                "type": "binary",
+                "operation": "add",
+                "operator": "+",
+                "operands": [
+                  "2",
+                  "3"
+                ],
+                "result": "5",
+                "position": 2
+              }
+            ],
+            "precision": 50,
+            "rounding": "ROUND_HALF_EVEN",
+            "execution": {
+              "tool": "arithmetic_parse",
+              "precision": 50
+            }
+          }
+        },
+        "error": null,
+        "idempotency_key": "3e802f00-96b1-4014-b2e9-5299a3a1e3f8",
+        "fingerprint": "bc705aaed270b880bb998452ece5d1d1211c34b8a334ea13828db1ea732713eb",
+        "tool_calls": 1,
+        "cancel_requested": false,
+        "cost": null,
+        "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+        "events_url": "/api/runs/run_0e24a50cd7ad435bbbdb372ea1428d16/events",
+        "status_url": "/api/runs/run_0e24a50cd7ad435bbbdb372ea1428d16",
+        "events": [
+          {
+            "id": 77,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "run.queued",
+            "data": {
+              "status": "queued",
+              "session_id": "local-direct",
+              "kind": "tool"
+            },
+            "created_at": 1794979351.0232892
+          },
+          {
+            "id": 78,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "run.started",
+            "data": {
+              "status": "running",
+              "kind": "tool"
+            },
+            "created_at": 1794979351.0234911
+          },
+          {
+            "id": 79,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "tool.intent",
+            "data": {
+              "call_id": "direct-run_0e24a50cd7ad435bbbdb372ea1428d16",
+              "name": "arithmetic_parse",
+              "arguments": {
+                "expression": "2 + 3"
+              },
+              "intent_id": 12
+            },
+            "created_at": 1794979351.028126
+          },
+          {
+            "id": 80,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "tool.started",
+            "data": {
+              "call_id": "direct-run_0e24a50cd7ad435bbbdb372ea1428d16",
+              "name": "arithmetic_parse",
+              "tool_calls": 1
+            },
+            "created_at": 1794979351.028297
+          },
+          {
+            "id": 81,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "tool.result",
+            "data": {
+              "call_id": "direct-run_0e24a50cd7ad435bbbdb372ea1428d16",
+              "name": "arithmetic_parse",
+              "result": {
+                "type": "expression",
+                "syntax_type": "binary",
+                "ast": {
+                  "type": "binary",
+                  "position": 2,
+                  "operator": "+",
+                  "left": {
+                    "type": "number",
+                    "position": 0,
+                    "value": "2"
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 4,
+                    "value": "3"
+                  }
+                },
+                "result": "5",
+                "steps": [
+                  {
+                    "index": 1,
+                    "type": "binary",
+                    "operation": "add",
+                    "operator": "+",
+                    "operands": [
+                      "2",
+                      "3"
+                    ],
+                    "result": "5",
+                    "position": 2
+                  }
+                ],
+                "precision": 50,
+                "rounding": "ROUND_HALF_EVEN",
+                "execution": {
+                  "tool": "arithmetic_parse",
+                  "precision": 50
+                }
+              }
+            },
+            "created_at": 1794979351.028544
+          },
+          {
+            "id": 82,
+            "run_id": "run_0e24a50cd7ad435bbbdb372ea1428d16",
+            "type": "run.completed",
+            "data": {
+              "status": "completed",
+              "result": {
+                "kind": "tool",
+                "name": "arithmetic_parse",
+                "result": {
+                  "type": "expression",
+                  "syntax_type": "binary",
+                  "ast": {
+                    "type": "binary",
+                    "position": 2,
+                    "operator": "+",
+                    "left": {
+                      "type": "number",
+                      "position": 0,
+                      "value": "2"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 4,
+                      "value": "3"
+                    }
+                  },
+                  "result": "5",
+                  "steps": [
+                    {
+                      "index": 1,
+                      "type": "binary",
+                      "operation": "add",
+                      "operator": "+",
+                      "operands": [
+                        "2",
+                        "3"
+                      ],
+                      "result": "5",
+                      "position": 2
+                    }
+                  ],
+                  "precision": 50,
+                  "rounding": "ROUND_HALF_EVEN",
+                  "execution": {
+                    "tool": "arithmetic_parse",
+                    "precision": 50
+                  }
+                }
+              },
+              "tool_calls": 1,
+              "cost": null
+            },
+            "created_at": 1794979351.028682
+          }
+        ]
+      }
+    ],
+    "service": {
+      "instance_id": "14c228ea7f544b2aa65f7b70594bad31",
+      "pid": 99120,
+      "ready": true,
+      "busy": false,
+      "draining": false,
+      "config_revision": 6,
+      "active_run": null
+    },
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "sdk_nonstream": {
+      "text": "SDK非流验收成功",
+      "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+      "usage": {
+        "completion_tokens": 6,
+        "prompt_tokens": 17,
+        "total_tokens": 23,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null,
+        "cost": 4.83e-06
+      }
+    },
+    "sdk_stream": {
+      "text": "SDK流验收成功",
+      "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+      "chunk_count": 4,
+      "usage": {
+        "completion_tokens": 5,
+        "prompt_tokens": 16,
+        "total_tokens": 21,
+        "completion_tokens_details": null,
+        "prompt_tokens_details": null,
+        "cost": 4.19e-06
+      }
+    },
+    "syntax_error": {
+      "code": "syntax_error",
+      "message": "Expected a number, unary sign or opening parenthesis",
+      "execution": {
+        "tool": "arithmetic_parse",
+        "precision": 50
+      },
+      "position": 9
+    },
+    "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+    "headed_window": {
+      "windowId": 1028106094,
+      "bounds": {
+        "left": 22,
+        "top": 55,
+        "width": 1200,
+        "height": 905,
+        "windowState": "normal"
+      }
+    },
+    "unreclaimed": [],
+    "passed": true,
+    "finished_at": 1794979351.202507,
+    "previous_failure": {
+      "type": "AssertionError",
+      "message": "Error: [Errno 1] Operation not permitted: '<HOME_DIR>/.harness'\n",
+      "browser_session": "session_d771cb6690854a04ba20dd92291cfc6a"
+    },
+    "resumed_at": 1794979350.551404,
+    "cli_math_passed": true,
+    "unauthorized_status": 401,
+    "disable_and_override_passed": true
+  },
+  "model_runs": [
+    {
+      "id": "run_514e71fa6acb40a6b69b28229fb5a128",
+      "kind": "chat",
+      "session_id": "session_bae4575b81854b80bf84b1ad419ca4bc",
+      "status": "completed",
+      "created_at": 1794979189.7103941,
+      "started_at": 1794979189.711214,
+      "finished_at": 1794979193.2383318,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "请只回复：SDK非流验收成功"
+          }
+        ],
+        "stream": false,
+        "n": 1,
+        "harness_plugins": []
+      },
+      "result": {
+        "id": "chatcmpl-run_514e71fa6acb40a6b69b28229fb5a128",
+        "object": "chat.completion",
+        "created": 1794979193,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "SDK非流验收成功"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 17,
+          "completion_tokens": 6,
+          "total_tokens": 23,
+          "cost": 4.83e-06
+        }
+      },
+      "error": null,
+      "idempotency_key": "4c16a4ac-38bf-42a6-8395-139118bc5b05",
+      "fingerprint": "69deb266510a78ac5ef8e15db6b6530ad37ce3f36ea1c08b4911479a0c3a04ab",
+      "tool_calls": 0,
+      "cancel_requested": false,
+      "cost": 4.83e-06,
+      "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+      "events_url": "/api/runs/run_514e71fa6acb40a6b69b28229fb5a128/events",
+      "status_url": "/api/runs/run_514e71fa6acb40a6b69b28229fb5a128",
+      "events": [
+        {
+          "id": 5,
+          "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_bae4575b81854b80bf84b1ad419ca4bc",
+            "kind": "chat"
+          },
+          "created_at": 1794979189.710803
+        },
+        {
+          "id": 6,
+          "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979189.7114098
+        },
+        {
+          "id": 7,
+          "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": []
+          },
+          "created_at": 1794979189.712366
+        },
+        {
+          "id": 8,
+          "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+          "type": "assistant.final",
+          "data": {
+            "content": "SDK非流验收成功",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979193.23811
+        },
+        {
+          "id": 9,
+          "run_id": "run_514e71fa6acb40a6b69b28229fb5a128",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_514e71fa6acb40a6b69b28229fb5a128",
+              "object": "chat.completion",
+              "created": 1794979193,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "SDK非流验收成功"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 17,
+                "completion_tokens": 6,
+                "total_tokens": 23,
+                "cost": 4.83e-06
+              }
+            },
+            "tool_calls": 0,
+            "cost": 4.83e-06
+          },
+          "created_at": 1794979193.238851
+        }
+      ]
+    },
+    {
+      "id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+      "kind": "chat",
+      "session_id": "session_e8f90e77ce34450783386bb913f6a9e4",
+      "status": "completed",
+      "created_at": 1794979193.256844,
+      "started_at": 1794979193.2574441,
+      "finished_at": 1794979201.5401258,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "请只回复：SDK流验收成功"
+          }
+        ],
+        "stream": true,
+        "n": 1,
+        "stream_options": {
+          "include_usage": true
+        },
+        "harness_plugins": []
+      },
+      "result": {
+        "id": "chatcmpl-run_e7e3cf5319484cd8bb81c560fa4619fd",
+        "object": "chat.completion",
+        "created": 1794979201,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "SDK流验收成功"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 16,
+          "completion_tokens": 5,
+          "total_tokens": 21,
+          "cost": 4.19e-06
+        }
+      },
+      "error": null,
+      "idempotency_key": "80effc52-6377-430d-ba65-e14d7c917e37",
+      "fingerprint": "2818d4df84f6a3741359e635519a37b2ddb89a548ef6c11daeebc4e9d88ba9fe",
+      "tool_calls": 0,
+      "cancel_requested": false,
+      "cost": 4.19e-06,
+      "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+      "events_url": "/api/runs/run_e7e3cf5319484cd8bb81c560fa4619fd/events",
+      "status_url": "/api/runs/run_e7e3cf5319484cd8bb81c560fa4619fd",
+      "events": [
+        {
+          "id": 10,
+          "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_e8f90e77ce34450783386bb913f6a9e4",
+            "kind": "chat"
+          },
+          "created_at": 1794979193.257076
+        },
+        {
+          "id": 11,
+          "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979193.257549
+        },
+        {
+          "id": 12,
+          "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": []
+          },
+          "created_at": 1794979193.258826
+        },
+        {
+          "id": 13,
+          "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+          "type": "assistant.final",
+          "data": {
+            "content": "SDK流验收成功",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979201.539952
+        },
+        {
+          "id": 14,
+          "run_id": "run_e7e3cf5319484cd8bb81c560fa4619fd",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_e7e3cf5319484cd8bb81c560fa4619fd",
+              "object": "chat.completion",
+              "created": 1794979201,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "SDK流验收成功"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 16,
+                "completion_tokens": 5,
+                "total_tokens": 21,
+                "cost": 4.19e-06
+              }
+            },
+            "tool_calls": 0,
+            "cost": 4.19e-06
+          },
+          "created_at": 1794979201.540289
+        }
+      ]
+    },
+    {
+      "id": "run_a98533e953d540759ba604be48bb057b",
+      "kind": "chat",
+      "session_id": "session_7231c1ac524e475bbe9e723115bd332d",
+      "status": "completed",
+      "created_at": 1794979201.555914,
+      "started_at": 1794979201.5563571,
+      "finished_at": 1794979206.036271,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "必须调用 arithmetic_parse 工具计算 (35 × 7 - 128) ÷ (12 + 8)，expression 必须原样输入。只在收到工具结果后给出答案，不心算、不用任何eval。"
+          }
+        ],
+        "stream": false,
+        "n": 1,
+        "harness_plugins": [
+          "arithmetic"
+        ]
+      },
+      "result": {
+        "id": "chatcmpl-run_a98533e953d540759ba604be48bb057b",
+        "object": "chat.completion",
+        "created": 1794979206,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2645,
+          "completion_tokens": 72,
+          "total_tokens": 2717,
+          "cost": 0.00027765
+        }
+      },
+      "error": null,
+      "idempotency_key": "0de48497-b057-42c1-9e69-74d98376fee2",
+      "fingerprint": "1bb08466bbf4fdf63524b78bf4dc6543555748118918e0978a27632f86780c52",
+      "tool_calls": 1,
+      "cancel_requested": false,
+      "cost": 0.00027765,
+      "run_id": "run_a98533e953d540759ba604be48bb057b",
+      "events_url": "/api/runs/run_a98533e953d540759ba604be48bb057b/events",
+      "status_url": "/api/runs/run_a98533e953d540759ba604be48bb057b",
+      "events": [
+        {
+          "id": 15,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_7231c1ac524e475bbe9e723115bd332d",
+            "kind": "chat"
+          },
+          "created_at": 1794979201.5560262
+        },
+        {
+          "id": 16,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979201.556448
+        },
+        {
+          "id": 17,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse"
+            ]
+          },
+          "created_at": 1794979201.564641
+        },
+        {
+          "id": 18,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_a7ef",
+            "name": "arithmetic_parse",
+            "arguments": {
+              "expression": "(35 × 7 - 128) ÷ (12 + 8)"
+            },
+            "intent_id": 1
+          },
+          "created_at": 1794979204.379759
+        },
+        {
+          "id": 19,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_a7ef",
+            "name": "arithmetic_parse",
+            "tool_calls": 1
+          },
+          "created_at": 1794979204.380228
+        },
+        {
+          "id": 20,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_a7ef",
+            "name": "arithmetic_parse",
+            "result": {
+              "type": "expression",
+              "syntax_type": "binary",
+              "ast": {
+                "type": "binary",
+                "position": 15,
+                "operator": "/",
+                "left": {
+                  "type": "binary",
+                  "position": 8,
+                  "operator": "-",
+                  "left": {
+                    "type": "binary",
+                    "position": 4,
+                    "operator": "*",
+                    "left": {
+                      "type": "number",
+                      "position": 1,
+                      "value": "35"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 6,
+                      "value": "7"
+                    }
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 10,
+                    "value": "128"
+                  }
+                },
+                "right": {
+                  "type": "binary",
+                  "position": 21,
+                  "operator": "+",
+                  "left": {
+                    "type": "number",
+                    "position": 18,
+                    "value": "12"
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 23,
+                    "value": "8"
+                  }
+                }
+              },
+              "result": "5.85",
+              "steps": [
+                {
+                  "index": 1,
+                  "type": "binary",
+                  "operation": "multiply",
+                  "operator": "*",
+                  "operands": [
+                    "35",
+                    "7"
+                  ],
+                  "result": "245",
+                  "position": 4
+                },
+                {
+                  "index": 2,
+                  "type": "binary",
+                  "operation": "subtract",
+                  "operator": "-",
+                  "operands": [
+                    "245",
+                    "128"
+                  ],
+                  "result": "117",
+                  "position": 8
+                },
+                {
+                  "index": 3,
+                  "type": "binary",
+                  "operation": "add",
+                  "operator": "+",
+                  "operands": [
+                    "12",
+                    "8"
+                  ],
+                  "result": "20",
+                  "position": 21
+                },
+                {
+                  "index": 4,
+                  "type": "binary",
+                  "operation": "divide",
+                  "operator": "/",
+                  "operands": [
+                    "117",
+                    "20"
+                  ],
+                  "result": "5.85",
+                  "position": 15
+                }
+              ],
+              "precision": 50,
+              "rounding": "ROUND_HALF_EVEN",
+              "execution": {
+                "tool": "arithmetic_parse",
+                "precision": 50
+              }
+            }
+          },
+          "created_at": 1794979204.3814359
+        },
+        {
+          "id": 21,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "provider.request",
+          "data": {
+            "round": 2,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse"
+            ]
+          },
+          "created_at": 1794979204.381641
+        },
+        {
+          "id": 22,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "assistant.final",
+          "data": {
+            "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979206.0360918
+        },
+        {
+          "id": 23,
+          "run_id": "run_a98533e953d540759ba604be48bb057b",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_a98533e953d540759ba604be48bb057b",
+              "object": "chat.completion",
+              "created": 1794979206,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "(35 × 7 - 128) ÷ (12 + 8) 的计算结果是 5.85。"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 2645,
+                "completion_tokens": 72,
+                "total_tokens": 2717,
+                "cost": 0.00027765
+              }
+            },
+            "tool_calls": 1,
+            "cost": 0.00027765
+          },
+          "created_at": 1794979206.0364559
+        }
+      ]
+    },
+    {
+      "id": "run_65ca2749d784492ab50bcb5544b8844c",
+      "kind": "chat",
+      "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+      "status": "completed",
+      "created_at": 1794979206.23699,
+      "started_at": 1794979206.237729,
+      "finished_at": 1794979222.606384,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "这是已授权本地验收。第一轮调用 arithmetic_parse 计算 (35 × 7 - 128) ÷ (12 + 8)，同时调用 browser_open 创建一个 about:blank 自有测试页。拿到target_id后，必须 browser_navigate 在该原tab导航到 http://127.0.0.1:57242/，不能再open。然后 browser_eval 编译执行以下原样JS：document.querySelector('#message').value='Harness live CDP verified'; document.querySelector('#apply').click(); document.querySelector('#result').textContent。如果页面还未加载允许一次重试eval。接着 browser_extract max_chars=4000，再 browser_status 查看全浏览器快照。不要关闭页面，留给独立截图核验；不要release。最终简短报告算术工具结果和页面result文本，不心算。"
+          }
+        ],
+        "stream": false,
+        "n": 1,
+        "harness_plugins": [
+          "arithmetic",
+          "browser-safety"
+        ]
+      },
+      "result": {
+        "id": "chatcmpl-run_65ca2749d784492ab50bcb5544b8844c",
+        "object": "chat.completion",
+        "created": 1794979222,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 18895,
+          "completion_tokens": 315,
+          "total_tokens": 19210,
+          "cost": 0.0018738000000000001
+        }
+      },
+      "error": null,
+      "idempotency_key": "893297ab-42c9-4b9b-9489-537f39c115ac",
+      "fingerprint": "8aa34a0e65a74a1f6ccb793837ea9552d946a6bb4bb1acd50b7f6ab295582a26",
+      "tool_calls": 6,
+      "cancel_requested": false,
+      "cost": 0.0018738000000000001,
+      "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+      "events_url": "/api/runs/run_65ca2749d784492ab50bcb5544b8844c/events",
+      "status_url": "/api/runs/run_65ca2749d784492ab50bcb5544b8844c",
+      "events": [
+        {
+          "id": 30,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+            "kind": "chat"
+          },
+          "created_at": 1794979206.2373319
+        },
+        {
+          "id": 31,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979206.237823
+        },
+        {
+          "id": 32,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979206.265391
+        },
+        {
+          "id": 33,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_0ab6",
+            "name": "arithmetic_parse",
+            "arguments": {
+              "expression": "(35 × 7 - 128) ÷ (12 + 8)"
+            },
+            "intent_id": 3
+          },
+          "created_at": 1794979209.7721019
+        },
+        {
+          "id": 34,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_0ab6",
+            "name": "arithmetic_parse",
+            "tool_calls": 1
+          },
+          "created_at": 1794979209.7730749
+        },
+        {
+          "id": 35,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_0ab6",
+            "name": "arithmetic_parse",
+            "result": {
+              "type": "expression",
+              "syntax_type": "binary",
+              "ast": {
+                "type": "binary",
+                "position": 15,
+                "operator": "/",
+                "left": {
+                  "type": "binary",
+                  "position": 8,
+                  "operator": "-",
+                  "left": {
+                    "type": "binary",
+                    "position": 4,
+                    "operator": "*",
+                    "left": {
+                      "type": "number",
+                      "position": 1,
+                      "value": "35"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 6,
+                      "value": "7"
+                    }
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 10,
+                    "value": "128"
+                  }
+                },
+                "right": {
+                  "type": "binary",
+                  "position": 21,
+                  "operator": "+",
+                  "left": {
+                    "type": "number",
+                    "position": 18,
+                    "value": "12"
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 23,
+                    "value": "8"
+                  }
+                }
+              },
+              "result": "5.85",
+              "steps": [
+                {
+                  "index": 1,
+                  "type": "binary",
+                  "operation": "multiply",
+                  "operator": "*",
+                  "operands": [
+                    "35",
+                    "7"
+                  ],
+                  "result": "245",
+                  "position": 4
+                },
+                {
+                  "index": 2,
+                  "type": "binary",
+                  "operation": "subtract",
+                  "operator": "-",
+                  "operands": [
+                    "245",
+                    "128"
+                  ],
+                  "result": "117",
+                  "position": 8
+                },
+                {
+                  "index": 3,
+                  "type": "binary",
+                  "operation": "add",
+                  "operator": "+",
+                  "operands": [
+                    "12",
+                    "8"
+                  ],
+                  "result": "20",
+                  "position": 21
+                },
+                {
+                  "index": 4,
+                  "type": "binary",
+                  "operation": "divide",
+                  "operator": "/",
+                  "operands": [
+                    "117",
+                    "20"
+                  ],
+                  "result": "5.85",
+                  "position": 15
+                }
+              ],
+              "precision": 50,
+              "rounding": "ROUND_HALF_EVEN",
+              "execution": {
+                "tool": "arithmetic_parse",
+                "precision": 50
+              }
+            }
+          },
+          "created_at": 1794979209.775459
+        },
+        {
+          "id": 36,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_c1ba",
+            "name": "browser_open",
+            "arguments": {
+              "url": "about:blank"
+            },
+            "intent_id": 4
+          },
+          "created_at": 1794979209.77585
+        },
+        {
+          "id": 37,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_c1ba",
+            "name": "browser_open",
+            "tool_calls": 2
+          },
+          "created_at": 1794979209.7762911
+        },
+        {
+          "id": 38,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_c1ba",
+            "name": "browser_open",
+            "result": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "url": "about:blank",
+              "owned": true,
+              "quota_used": 1,
+              "quota": 3,
+              "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+              "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+            }
+          },
+          "created_at": 1794979210.0447412
+        },
+        {
+          "id": 39,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 2,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979210.044825
+        },
+        {
+          "id": 40,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_66a1",
+            "name": "browser_navigate",
+            "arguments": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "url": "http://127.0.0.1:57242/"
+            },
+            "intent_id": 5
+          },
+          "created_at": 1794979212.953245
+        },
+        {
+          "id": 41,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_66a1",
+            "name": "browser_navigate",
+            "tool_calls": 3
+          },
+          "created_at": 1794979212.956336
+        },
+        {
+          "id": 42,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_66a1",
+            "name": "browser_navigate",
+            "result": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "navigation": {
+                "frameId": "93C63ADE1A403D3786472647607FCA76",
+                "loaderId": "D4B9843A25097C1B3FE66185EA052227",
+                "isDownload": false
+              },
+              "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+            }
+          },
+          "created_at": 1794979212.997144
+        },
+        {
+          "id": 43,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 3,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979212.9976199
+        },
+        {
+          "id": 44,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_3a88",
+            "name": "browser_eval",
+            "arguments": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "script": "document.querySelector('#message').value='Harness live CDP verified'; document.querySelector('#apply').click(); document.querySelector('#result').textContent"
+            },
+            "intent_id": 6
+          },
+          "created_at": 1794979216.5801332
+        },
+        {
+          "id": 45,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_3a88",
+            "name": "browser_eval",
+            "tool_calls": 4
+          },
+          "created_at": 1794979216.5804439
+        },
+        {
+          "id": 46,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_3a88",
+            "name": "browser_eval",
+            "result": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "result": {
+                "type": "string",
+                "value": "Harness live CDP verified"
+              },
+              "quota_used": 1,
+              "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+            }
+          },
+          "created_at": 1794979216.603529
+        },
+        {
+          "id": 47,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 4,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979216.603727
+        },
+        {
+          "id": 48,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_54ae",
+            "name": "browser_extract",
+            "arguments": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "max_chars": 4000
+            },
+            "intent_id": 7
+          },
+          "created_at": 1794979219.252841
+        },
+        {
+          "id": 49,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_54ae",
+            "name": "browser_extract",
+            "tool_calls": 5
+          },
+          "created_at": 1794979219.2532558
+        },
+        {
+          "id": 50,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_54ae",
+            "name": "browser_extract",
+            "result": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "title": "Harness Live Acceptance",
+              "url": "http://127.0.0.1:57242/",
+              "text": "Harness Live Acceptance\n\nLocal isolated CDP browser test. No personal browser data.\n\nMessage  Apply\n\nHarness live CDP verified",
+              "max_chars": 4000,
+              "truncated": false
+            }
+          },
+          "created_at": 1794979219.276427
+        },
+        {
+          "id": 51,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 5,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979219.276564
+        },
+        {
+          "id": 52,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_82d7",
+            "name": "browser_status",
+            "arguments": {},
+            "intent_id": 8
+          },
+          "created_at": 1794979220.638171
+        },
+        {
+          "id": 53,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_82d7",
+            "name": "browser_status",
+            "tool_calls": 6
+          },
+          "created_at": 1794979220.638638
+        },
+        {
+          "id": 54,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_82d7",
+            "name": "browser_status",
+            "result": {
+              "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+              "session_status": "active",
+              "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+              "targets": [
+                {
+                  "targetId": "964DF58E9CF0DA3B27B595B520EC88B5",
+                  "type": "browser_ui",
+                  "title": "Omnibox Popup",
+                  "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+                  "attached": false,
+                  "canAccessOpener": false,
+                  "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                  "ownership": "foreign",
+                  "owner_session_id": null
+                },
+                {
+                  "targetId": "D15C01DF792F2D4C40DF71F45B4655C2",
+                  "type": "page",
+                  "title": "about:blank",
+                  "url": "about:blank",
+                  "attached": false,
+                  "canAccessOpener": false,
+                  "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                  "ownership": "foreign",
+                  "owner_session_id": null
+                },
+                {
+                  "targetId": "078BF86AC1F25B40BFED235C20858628",
+                  "type": "browser_ui",
+                  "title": "Omnibox Popup",
+                  "url": "chrome://omnibox-popup.top-chrome/",
+                  "attached": false,
+                  "canAccessOpener": false,
+                  "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                  "ownership": "foreign",
+                  "owner_session_id": null
+                },
+                {
+                  "targetId": "93C63ADE1A403D3786472647607FCA76",
+                  "type": "page",
+                  "title": "Harness Live Acceptance",
+                  "url": "http://127.0.0.1:57242/",
+                  "attached": false,
+                  "canAccessOpener": false,
+                  "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+                  "ownership": "self",
+                  "owner_session_id": "session_d771cb6690854a04ba20dd92291cfc6a"
+                }
+              ],
+              "owned": [
+                {
+                  "target_id": "93C63ADE1A403D3786472647607FCA76",
+                  "instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+                  "state": "owned",
+                  "source": "open",
+                  "created_at": 1794979210.043023,
+                  "present_in_snapshot": true
+                }
+              ],
+              "pending": [],
+              "quota": 3,
+              "quota_used": 1,
+              "quota_exceeded": false,
+              "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+            }
+          },
+          "created_at": 1794979220.653835
+        },
+        {
+          "id": 55,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "provider.request",
+          "data": {
+            "round": 6,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse",
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979220.654
+        },
+        {
+          "id": 56,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "assistant.final",
+          "data": {
+            "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979222.606255
+        },
+        {
+          "id": 57,
+          "run_id": "run_65ca2749d784492ab50bcb5544b8844c",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_65ca2749d784492ab50bcb5544b8844c",
+              "object": "chat.completion",
+              "created": 1794979222,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "算术工具结果为 5.85。页面 result 文本为 \"Harness live CDP verified\"。"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 18895,
+                "completion_tokens": 315,
+                "total_tokens": 19210,
+                "cost": 0.0018738000000000001
+              }
+            },
+            "tool_calls": 6,
+            "cost": 0.0018738000000000001
+          },
+          "created_at": 1794979222.6065762
+        }
+      ]
+    },
+    {
+      "id": "run_63e156ec1e584553b881c870d9ae15b0",
+      "kind": "chat",
+      "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+      "status": "completed",
+      "created_at": 1794979222.879703,
+      "started_at": 1794979222.880024,
+      "finished_at": 1794979231.8849,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "现在独立截图核验已结束。只调用 browser_close 关闭我们刚才的target_id=93C63ADE1A403D3786472647607FCA76，确认closed:true；再调用 browser_release。汇报 unreclaimed，不能关闭foreign页。"
+          }
+        ],
+        "stream": false,
+        "n": 1,
+        "harness_plugins": [
+          "browser-safety"
+        ]
+      },
+      "result": {
+        "id": "chatcmpl-run_63e156ec1e584553b881c870d9ae15b0",
+        "object": "chat.completion",
+        "created": 1794979231,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10874,
+          "completion_tokens": 96,
+          "total_tokens": 10970,
+          "cost": 0.00103146
+        }
+      },
+      "error": null,
+      "idempotency_key": "c4161767-7c75-4863-994b-76898ce1daa3",
+      "fingerprint": "5faf03fdb15793bf8495333f65a3b0e8020111864e79ee14b738da9b6ef08a32",
+      "tool_calls": 2,
+      "cancel_requested": false,
+      "cost": 0.00103146,
+      "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+      "events_url": "/api/runs/run_63e156ec1e584553b881c870d9ae15b0/events",
+      "status_url": "/api/runs/run_63e156ec1e584553b881c870d9ae15b0",
+      "events": [
+        {
+          "id": 58,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+            "kind": "chat"
+          },
+          "created_at": 1794979222.8798149
+        },
+        {
+          "id": 59,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979222.880079
+        },
+        {
+          "id": 60,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": [
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979222.8858528
+        },
+        {
+          "id": 61,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_27de",
+            "name": "browser_close",
+            "arguments": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76"
+            },
+            "intent_id": 9
+          },
+          "created_at": 1794979228.767702
+        },
+        {
+          "id": 62,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_27de",
+            "name": "browser_close",
+            "tool_calls": 1
+          },
+          "created_at": 1794979228.76806
+        },
+        {
+          "id": 63,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_27de",
+            "name": "browser_close",
+            "result": {
+              "target_id": "93C63ADE1A403D3786472647607FCA76",
+              "closed": true,
+              "quota_used": 0
+            }
+          },
+          "created_at": 1794979228.783257
+        },
+        {
+          "id": 64,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "provider.request",
+          "data": {
+            "round": 2,
+            "max_tokens": 1024,
+            "tool_names": [
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979228.7833369
+        },
+        {
+          "id": 65,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_86f3",
+            "name": "browser_release",
+            "arguments": {},
+            "intent_id": 10
+          },
+          "created_at": 1794979230.2595708
+        },
+        {
+          "id": 66,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_86f3",
+            "name": "browser_release",
+            "tool_calls": 2
+          },
+          "created_at": 1794979230.2604291
+        },
+        {
+          "id": 67,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_86f3",
+            "name": "browser_release",
+            "result": {
+              "session_id": "session_d771cb6690854a04ba20dd92291cfc6a",
+              "session_status": "stopping",
+              "closed": [],
+              "unreclaimed": [],
+              "failures": [],
+              "quota_used": 0,
+              "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+            }
+          },
+          "created_at": 1794979230.2746382
+        },
+        {
+          "id": 68,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "provider.request",
+          "data": {
+            "round": 3,
+            "max_tokens": 1024,
+            "tool_names": [
+              "browser_open",
+              "browser_navigate",
+              "browser_eval",
+              "browser_extract",
+              "browser_close",
+              "browser_status",
+              "browser_release"
+            ]
+          },
+          "created_at": 1794979230.274762
+        },
+        {
+          "id": 69,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "assistant.final",
+          "data": {
+            "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979231.8847601
+        },
+        {
+          "id": 70,
+          "run_id": "run_63e156ec1e584553b881c870d9ae15b0",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_63e156ec1e584553b881c870d9ae15b0",
+              "object": "chat.completion",
+              "created": 1794979231,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "已成功关闭目标页面（closed: true），并执行 browser_release。汇报 unreclaimed 列表为空，未尝试关闭任何 foreign 页面。"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 10874,
+                "completion_tokens": 96,
+                "total_tokens": 10970,
+                "cost": 0.00103146
+              }
+            },
+            "tool_calls": 2,
+            "cost": 0.00103146
+          },
+          "created_at": 1794979231.8851042
+        }
+      ]
+    },
+    {
+      "id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+      "kind": "chat",
+      "session_id": "session_1c1d3156e8ad43fc8a2e93cf5fbe7dbe",
+      "status": "completed",
+      "created_at": 1794979428.873451,
+      "started_at": 1794979428.873811,
+      "finished_at": 1794979436.8653991,
+      "input": {
+        "model": "harness-default",
+        "messages": [
+          {
+            "role": "user",
+            "content": "验收CLI真实模型闭环：必须调用 arithmetic_parse 计算 (35 × 7 - 128) ÷ (12 + 8)，收到工具结果后再输出答案，不允许心算或用eval。"
+          }
+        ],
+        "stream": false,
+        "n": 1,
+        "harness_plugins": [
+          "arithmetic"
+        ]
+      },
+      "result": {
+        "id": "chatcmpl-run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+        "object": "chat.completion",
+        "created": 1794979436,
+        "model": "harness-default",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "根据工具计算结果，表达式 $(35 \\times 7 - 128) \\div (12 + 8)$ 的答案是：\n\n$$\n\\boxed{5.85}\n$$"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2633,
+          "completion_tokens": 85,
+          "total_tokens": 2718,
+          "cost": 0.00028372
+        }
+      },
+      "error": null,
+      "idempotency_key": "b9a0067e-21e0-4f1c-8dcb-c05e87c7afa2",
+      "fingerprint": "13fb94cef9077d3f17fe52eaa8ab43f011daecbe4f56b2e9f9b6ccc8bb27c5f0",
+      "tool_calls": 1,
+      "cancel_requested": false,
+      "cost": 0.00028372,
+      "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+      "events_url": "/api/runs/run_ecfcf6a71f55474aa8ed1d5a22c53f6a/events",
+      "status_url": "/api/runs/run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+      "events": [
+        {
+          "id": 83,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "run.queued",
+          "data": {
+            "status": "queued",
+            "session_id": "session_1c1d3156e8ad43fc8a2e93cf5fbe7dbe",
+            "kind": "chat"
+          },
+          "created_at": 1794979428.873593
+        },
+        {
+          "id": 84,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "run.started",
+          "data": {
+            "status": "running",
+            "kind": "chat"
+          },
+          "created_at": 1794979428.873893
+        },
+        {
+          "id": 85,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "provider.request",
+          "data": {
+            "round": 1,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse"
+            ]
+          },
+          "created_at": 1794979428.880202
+        },
+        {
+          "id": 86,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "tool.intent",
+          "data": {
+            "call_id": "call_7f83",
+            "name": "arithmetic_parse",
+            "arguments": {
+              "expression": "(35 × 7 - 128) ÷ (12 + 8)"
+            },
+            "intent_id": 13
+          },
+          "created_at": 1794979433.60968
+        },
+        {
+          "id": 87,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "tool.started",
+          "data": {
+            "call_id": "call_7f83",
+            "name": "arithmetic_parse",
+            "tool_calls": 1
+          },
+          "created_at": 1794979433.6101508
+        },
+        {
+          "id": 88,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "tool.result",
+          "data": {
+            "call_id": "call_7f83",
+            "name": "arithmetic_parse",
+            "result": {
+              "type": "expression",
+              "syntax_type": "binary",
+              "ast": {
+                "type": "binary",
+                "position": 15,
+                "operator": "/",
+                "left": {
+                  "type": "binary",
+                  "position": 8,
+                  "operator": "-",
+                  "left": {
+                    "type": "binary",
+                    "position": 4,
+                    "operator": "*",
+                    "left": {
+                      "type": "number",
+                      "position": 1,
+                      "value": "35"
+                    },
+                    "right": {
+                      "type": "number",
+                      "position": 6,
+                      "value": "7"
+                    }
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 10,
+                    "value": "128"
+                  }
+                },
+                "right": {
+                  "type": "binary",
+                  "position": 21,
+                  "operator": "+",
+                  "left": {
+                    "type": "number",
+                    "position": 18,
+                    "value": "12"
+                  },
+                  "right": {
+                    "type": "number",
+                    "position": 23,
+                    "value": "8"
+                  }
+                }
+              },
+              "result": "5.85",
+              "steps": [
+                {
+                  "index": 1,
+                  "type": "binary",
+                  "operation": "multiply",
+                  "operator": "*",
+                  "operands": [
+                    "35",
+                    "7"
+                  ],
+                  "result": "245",
+                  "position": 4
+                },
+                {
+                  "index": 2,
+                  "type": "binary",
+                  "operation": "subtract",
+                  "operator": "-",
+                  "operands": [
+                    "245",
+                    "128"
+                  ],
+                  "result": "117",
+                  "position": 8
+                },
+                {
+                  "index": 3,
+                  "type": "binary",
+                  "operation": "add",
+                  "operator": "+",
+                  "operands": [
+                    "12",
+                    "8"
+                  ],
+                  "result": "20",
+                  "position": 21
+                },
+                {
+                  "index": 4,
+                  "type": "binary",
+                  "operation": "divide",
+                  "operator": "/",
+                  "operands": [
+                    "117",
+                    "20"
+                  ],
+                  "result": "5.85",
+                  "position": 15
+                }
+              ],
+              "precision": 50,
+              "rounding": "ROUND_HALF_EVEN",
+              "execution": {
+                "tool": "arithmetic_parse",
+                "precision": 50
+              }
+            }
+          },
+          "created_at": 1794979433.6138592
+        },
+        {
+          "id": 89,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "provider.request",
+          "data": {
+            "round": 2,
+            "max_tokens": 1024,
+            "tool_names": [
+              "arithmetic_add",
+              "arithmetic_subtract",
+              "arithmetic_multiply",
+              "arithmetic_divide",
+              "arithmetic_parse"
+            ]
+          },
+          "created_at": 1794979433.613984
+        },
+        {
+          "id": 90,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "assistant.final",
+          "data": {
+            "content": "根据工具计算结果，表达式 $(35 \\times 7 - 128) \\div (12 + 8)$ 的答案是：\n\n$$\n\\boxed{5.85}\n$$",
+            "finish_reason": "stop"
+          },
+          "created_at": 1794979436.8651981
+        },
+        {
+          "id": 91,
+          "run_id": "run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+          "type": "run.completed",
+          "data": {
+            "status": "completed",
+            "result": {
+              "id": "chatcmpl-run_ecfcf6a71f55474aa8ed1d5a22c53f6a",
+              "object": "chat.completion",
+              "created": 1794979436,
+              "model": "harness-default",
+              "choices": [
+                {
+                  "index": 0,
+                  "message": {
+                    "role": "assistant",
+                    "content": "根据工具计算结果，表达式 $(35 \\times 7 - 128) \\div (12 + 8)$ 的答案是：\n\n$$\n\\boxed{5.85}\n$$"
+                  },
+                  "finish_reason": "stop"
+                }
+              ],
+              "usage": {
+                "prompt_tokens": 2633,
+                "completion_tokens": 85,
+                "total_tokens": 2718,
+                "cost": 0.00028372
+              }
+            },
+            "tool_calls": 1,
+            "cost": 0.00028372
+          },
+          "created_at": 1794979436.8657222
+        }
+      ]
+    }
+  ],
+  "browser_preflight": {
+    "open": {
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "url": "about:blank",
+      "owned": true,
+      "quota_used": 1,
+      "quota": 3,
+      "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    },
+    "status": {
+      "session_id": "preflight-93a75e6c509d4a249d1eec0d756ae674",
+      "session_status": "active",
+      "browser_instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+      "targets": [
+        {
+          "targetId": "52238CAF9EDDA79B1361C462A02A44E9",
+          "type": "service_worker",
+          "title": "Service Worker chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js",
+          "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/thunk.js",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "foreign",
+          "owner_session_id": null
+        },
+        {
+          "targetId": "A44FE38DC7400E2CA74333AF1F1CBBA0",
+          "type": "service_worker",
+          "title": "Service Worker chrome-extension://admccjkmockfdflocgggjfgdacdodkdf/background.js",
+          "url": "chrome-extension://admccjkmockfdflocgggjfgdacdodkdf/background.js",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "foreign",
+          "owner_session_id": null
+        },
+        {
+          "targetId": "586FEE509ECD26A1D241AD0EBA7BB1F7",
+          "type": "service_worker",
+          "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+          "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "foreign",
+          "owner_session_id": null
+        },
+        {
+          "targetId": "D15C01DF792F2D4C40DF71F45B4655C2",
+          "type": "page",
+          "title": "about:blank",
+          "url": "about:blank",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "foreign",
+          "owner_session_id": null
+        },
+        {
+          "targetId": "078BF86AC1F25B40BFED235C20858628",
+          "type": "browser_ui",
+          "title": "Omnibox Popup",
+          "url": "chrome://omnibox-popup.top-chrome/",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "foreign",
+          "owner_session_id": null
+        },
+        {
+          "targetId": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+          "type": "page",
+          "title": "about:blank",
+          "url": "about:blank",
+          "attached": false,
+          "canAccessOpener": false,
+          "browserContextId": "71F6B3BDC60335CEB956C2B465C684F0",
+          "ownership": "self",
+          "owner_session_id": "preflight-93a75e6c509d4a249d1eec0d756ae674"
+        }
+      ],
+      "owned": [
+        {
+          "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+          "instance_id": "88b7f7092f8a444c9b392ed4057445ae",
+          "state": "owned",
+          "source": "open",
+          "created_at": 1794978489.32406,
+          "present_in_snapshot": true
+        }
+      ],
+      "pending": [],
+      "quota": 3,
+      "quota_used": 1,
+      "quota_exceeded": false,
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    },
+    "headed_window": {
+      "windowId": 1028106094,
+      "bounds": {
+        "left": 22,
+        "top": 55,
+        "width": 1200,
+        "height": 905,
+        "windowState": "normal"
+      }
+    },
+    "navigate": {
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "navigation": {
+        "frameId": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+        "loaderId": "B288B8577A2DA970BF431FECA52226C4",
+        "isDownload": false
+      },
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    },
+    "eval": {
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "result": {
+        "type": "string",
+        "value": "Harness CDP verified"
+      },
+      "quota_used": 1,
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    },
+    "extract": {
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "title": "Harness CDP Acceptance",
+      "url": "http://127.0.0.1:52916/",
+      "text": "Harness CDP Acceptance\n\nThis is a local isolated browser test, not a personal browser profile.\n\nMessage  Apply\n\nHarness CDP verified",
+      "max_chars": 4000,
+      "truncated": false
+    },
+    "syntax_error": {
+      "error": {
+        "code": "script_syntax_error",
+        "message": "JavaScript compilation failed",
+        "execution": "not_started"
+      },
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "exception_details": {
+        "exceptionId": 1,
+        "text": "Uncaught",
+        "lineNumber": 0,
+        "columnNumber": 6,
+        "scriptId": "6",
+        "exception": {
+          "type": "object",
+          "subtype": "error",
+          "className": "SyntaxError",
+          "description": "SyntaxError: Unexpected token '='",
+          "objectId": "-2654723916097935044.2.1"
+        }
+      }
+    },
+    "singleton": true,
+    "quota_denied": {
+      "error": {
+        "code": "quota_exceeded",
+        "message": "Owned/unconfirmed reservations exhaust this session's quota",
+        "execution": "not_started"
+      }
+    },
+    "foreign_denied": {
+      "error": {
+        "code": "foreign_target",
+        "message": "Target is not owned by this session",
+        "execution": "not_started"
+      }
+    },
+    "close": {
+      "target_id": "4AB44C12D4AAEE03BACCE3AB73567EDC",
+      "closed": true,
+      "quota_used": 2
+    },
+    "release": {
+      "session_id": "preflight-93a75e6c509d4a249d1eec0d756ae674",
+      "session_status": "stopping",
+      "closed": [
+        "73E7A62F90A9593CE6F1F564D4F73A30",
+        "4E78C616C3E1F3038DE51B231E47575C"
+      ],
+      "unreclaimed": [],
+      "failures": [],
+      "quota_used": 0,
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    },
+    "stopped_denied": {
+      "error": {
+        "code": "session_stopping",
+        "message": "Browser session is stopping; only status/close/release may be retried",
+        "execution": "not_started"
+      }
+    },
+    "passed": true,
+    "cleanup": {
+      "session_id": "preflight-93a75e6c509d4a249d1eec0d756ae674",
+      "session_status": "stopping",
+      "closed": [],
+      "unreclaimed": [],
+      "failures": [],
+      "quota_used": 0,
+      "boundary": "Page JavaScript is not a permissions sandbox: it may modify pages, make network requests, navigate or open popups. Recognizable owned openerId descendants consume quota (even above its limit); opener-less/noopener pages cannot safely be attributed and are never auto-claimed or closed. Browser eval must not substitute for the arithmetic tools."
+    }
+  },
+  "initial_auth_check": {
+    "status_code": 200,
+    "key_length": 73,
+    "expected_format": true,
+    "error_code": null,
+    "error_message": ""
+  },
+  "initial_model_region_failure": {
+    "status_code": 403,
+    "error": {
+      "message": "This model is not available in your region.",
+      "code": 403,
+      "metadata": {
+        "routing_funnel": [
+          {
+            "step": "Initial Endpoints",
+            "endpoint_count": 3
+          },
+          {
+            "step": "Filter by Regional Surcharge",
+            "endpoint_count": 2
+          }
+        ],
+        "failed_routing_step": "Gate Endpoints with Geo Restrictions"
+      }
+    },
+    "model": null,
+    "usage": null
+  }
+}

@@ -1,0 +1,39 @@
+name: browser-safety
+version: 1.0.0
+description: Headed private-profile Chrome with persistent session ownership and conservative three-page quota. Page JavaScript is full-trust, not a sandbox.
+kind: standalone
+manifest_version: 2
+provides_tools:
+  - browser_open
+  - browser_navigate
+  - browser_eval
+  - browser_extract
+  - browser_close
+  - browser_status
+  - browser_release
+provides_hooks: []
+requires_env: []
+config_schema:
+  state_dir:
+    type: string
+    description: Private runtime and ownership ledger directory; defaults to HARNESS_HOME/plugin-data/browser-safety.
+  quota:
+    type: integer
+    default: 3
+    minimum: 1
+    maximum: 100
+    description: Per-session owned and uncertain-create reservations, including recognized opener-chain popups.
+  chrome_executable:
+    type: string
+    default: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+    description: Executable for the plugin-owned headed Chrome only.
+  timeout:
+    type: number
+    default: 20
+    exclusiveMinimum: 0
+    description: CDP connection and command deadline in seconds; timeout does not imply reclamation or cancellation of page effects.
+  startup_timeout:
+    type: number
+    default: 15
+    exclusiveMinimum: 0
+    description: Owned browser startup deadline; uncertain startup never causes a duplicate launch.

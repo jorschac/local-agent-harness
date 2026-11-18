@@ -1,0 +1,133 @@
+{
+  "id": "challenge-03-test-human-evidence",
+  "observed_on": "2026-11-18",
+  "timezone": "Asia/Shanghai",
+  "scope": "完整现有环境回归与用户三条准确 prompt 的既有运行只读验收，不涉及 Git、PDF、源码脱敏、新模型请求或浏览器操作",
+  "overall_conclusion": "离线339项全通过；算术调用和浏览器调用/回收事实通过；Google未取得天气，不能判定三项业务目标全部通过；天气数值仅作抓取文本一致性核对",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -vv --junitxml=<evidence>/pytest-final.xml",
+    "exit_code": 0,
+    "collected": 339,
+    "passed": 339,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "warnings": 1,
+    "duration_seconds": 3.18,
+    "claimed_399_not_accepted_as_actual": true,
+    "history_preserved": [
+      {"stage": "既有实现回归", "passed": 337, "warnings": 1},
+      {"stage": "普通wheel安装修正后", "passed": 339, "warnings": 1},
+      {"stage": "本次最终复验", "passed": 339, "warnings": 1}
+    ]
+  },
+  "environment": {
+    "python": "3.11.15",
+    "installed_harness_version": "0.1.0",
+    "venv_site_packages_origin": true,
+    "editable_install": false,
+    "wheel_tag": "py3-none-any",
+    "wheel_built_from_local_directory_not_direct_whl_url": true,
+    "pythonpath_present": false,
+    "all_17_host_python_modules_match_installed_sha256": true,
+    "both_plugin_python_and_manifest_match_installed_sha256": true,
+    "dependencies_installed_or_changed_by_this_task": false
+  },
+  "current_model_config": {
+    "model": "deepseek/deepseek-v4.1-flash-1017",
+    "alias": "harness-default",
+    "revision": 9,
+    "base_url": "https://openrouter.ai/api/v1",
+    "source": "现有非密钥配置文件只读",
+    "historical_run_upstream_model_confirmed": false,
+    "limitation": "三个run结果只有harness-default别名，provider.request未记录上游型号，不能由当前配置倒推历史run；旧报告Qwen保留为历史阶段"
+  },
+  "human_runs": [
+    {
+      "prompt": "用工具计算 (35 × 7 - 128) ÷ (12 + 8)",
+      "run_id": "run_82fe8dd5deb34140af4d5d02711afbad",
+      "created_at": "2026-11-18T13:50:15.567181+08:00",
+      "status": "completed",
+      "actual_started_result_names": ["arithmetic_parse"],
+      "started_event": 108,
+      "result_event": 109,
+      "arithmetic_result": "5.85",
+      "tool_invocation_verified": true,
+      "business_goal": "passed"
+    },
+    {
+      "prompt": "谷歌搜索一下今天北京的天气",
+      "run_id": "run_1c94de54188a4c468f0c1b20367d26c9",
+      "created_at": "2026-11-18T13:51:51.499118+08:00",
+      "status": "completed",
+      "actual_started_result_names": ["browser_open", "browser_extract", "browser_navigate", "browser_extract", "browser_close"],
+      "extract_result_events": [122, 130],
+      "extract_url": "https://www.google.com/sorry/index",
+      "verification_page_text_present": true,
+      "weather_result_obtained": false,
+      "close_result_event": 134,
+      "closed": true,
+      "quota_used_after_close": 0,
+      "raw_cdp_success_field_persisted": false,
+      "close_confirmation_boundary": "工具结果closed=true；一致的安装实现仅在CDP success is True后返回closed=true并回收。没有伪造原始success日志",
+      "tool_invocation_and_cleanup": "passed",
+      "business_goal": "blocked_by_google_verification_not_passed"
+    },
+    {
+      "prompt": "去中国天气网（weather.com.cn）搜索一下今天北京的天气",
+      "run_id": "run_3d55678829b0407292fdb33c117ce101",
+      "created_at": "2026-11-18T13:52:43.020761+08:00",
+      "status": "completed",
+      "actual_started_result_names": ["browser_open", "browser_extract", "browser_navigate", "browser_extract", "browser_release"],
+      "beijing_navigate_started_event": 150,
+      "beijing_extract_result_event": 155,
+      "beijing_extract_url": "https://www.weather.com.cn/weather/101010100.shtml",
+      "beijing_extract_truncated": true,
+      "forecast_text": "18日（今天）晴，7/-2℃，<3级；11:30更新，数据来源中央气象台",
+      "observation_text": "最高气温9.1℃，最低气温1.4℃",
+      "hourly_temperature_values_supported": true,
+      "future_19_to_22_temperature_values_supported": true,
+      "core_model_weather_numeric_values_supported_by_extract": true,
+      "site_search_box_interaction_verified": false,
+      "actual_method": "首页后直接导航北京预报URL，不是站内搜索框交互",
+      "release_result_event": 159,
+      "release_closed_target_present": true,
+      "release_unreclaimed": [],
+      "release_failures": [],
+      "quota_used_after_release": 0,
+      "weather_meteorological_accuracy_independently_reverified": false,
+      "limitations": ["天气值只代表本次抓取/日志", "实况截至更新时、未来风力白天限定不是extract明确给出的时点字段", "truncated=true不支持对未返回内容作断言"]
+    }
+  ],
+  "chrome_global_ledger": {
+    "readonly_file_snapshot_only": true,
+    "session_entries": 6,
+    "status_counts": {"stopping": 5, "active": 1},
+    "owned_records": 0,
+    "pending_records": 0,
+    "unreclaimed_records_owned_plus_pending": 0,
+    "actual_chrome_foreign_page_state_verified": false,
+    "user_pages_closed_by_this_task": false
+  },
+  "local_http": {
+    "attempted_methods": ["GET"],
+    "cross_check_completed": false,
+    "error": "URLError: [Errno 1] Operation not permitted",
+    "fallback": "SQLite mode=ro + PRAGMA query_only=ON及非密钥配置文件只读",
+    "current_service_ready_busy_verified": false,
+    "permission_bypass_used": false
+  },
+  "issues": [
+    "用户399项说法与实际339项不符；必须按339，不凑数",
+    "Google两次extract都是sorry/index验证页，未查到天气；completed只表示run结束，非业务目标成功",
+    "当前配置为DeepSeek V4.1 Flash、不是旧报告历史Qwen；别名日志不能追溯确认历史run上游型号",
+    "本机HTTP读取权限阻断，未完成API交叉核验或确认当前ready/busy；已只读SQLite核对必要事件",
+    "CDP原始success字段未持久化；关闭结论使用工具closed=true与一致安装实现，不伪造原始CDP记录",
+    "中国天气网采用直接北京URL导航，没有站内搜索框操作证据；收尾是browser_release而非browser_close",
+    "天气核心数值有extract支持，实况时点/白天等限定属附加解释；不独立核验气象准确性",
+    "保留1条StarletteDeprecationWarning，无测试失败",
+    "预设统计技能文件在本设备指定位置不存在，未安装或绕过；标准库完成JUnit统计",
+    "证据脚本曾遇畸形参数化URL脱敏错误，已仅修改evidence脚本修复并完成，不属pytest或安装失败"
+  ],
+  "redaction": "本summary及human-service-traces删除IP、秘钥、本机绝对路径、无关账号和无关业务run；原始pytest完整日志/JUnit依要求原样保存"
+}

@@ -1,0 +1,117 @@
+{
+  "command": ".venv/bin/python -m pytest -vv --junitxml=<evidence>/pytest-final.xml",
+  "exit_code": 0,
+  "collected_from_log": 339,
+  "junit_testcases": 339,
+  "totals": {
+    "collected": 339,
+    "passed": 339,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "modules": {
+    "tests.test_acceptance": {
+      "collected": 3,
+      "passed": 3,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_arithmetic_plugin": {
+      "collected": 120,
+      "passed": 120,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_bootstrap": {
+      "collected": 2,
+      "passed": 2,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_browser_plugin": {
+      "collected": 60,
+      "passed": 60,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_cli": {
+      "collected": 70,
+      "passed": 70,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_core": {
+      "collected": 46,
+      "passed": 46,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_plugin_lifecycle": {
+      "collected": 4,
+      "passed": 4,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_protocol_regressions": {
+      "collected": 32,
+      "passed": 32,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_provider_region": {
+      "collected": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tests.test_readonly_config": {
+      "collected": 1,
+      "passed": 1,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "summary_line": "339 passed, 1 warning in 3.18s",
+  "warnings": [
+    {
+      "category": "StarletteDeprecationWarning",
+      "message": "Using httpx with starlette.testclient is deprecated; install httpx2 instead."
+    }
+  ],
+  "history": [
+    {
+      "stage": "既有实现回归",
+      "passed": 337,
+      "warnings": 1,
+      "duration_seconds": 3.47,
+      "source": "development/pytest-final.txt",
+      "preserved_unmodified": true
+    },
+    {
+      "stage": "普通 wheel 安装修正回归",
+      "passed": 339,
+      "warnings": 1,
+      "duration_seconds": 3.02,
+      "source": "model-options/pytest-build-fix.txt",
+      "preserved_unmodified": true
+    },
+    {
+      "stage": "本次最终独立回归",
+      "passed": 339,
+      "source": "pytest-final.log"
+    }
+  ],
+  "user_claimed_count": 399,
+  "actual_count_used": 339
+}

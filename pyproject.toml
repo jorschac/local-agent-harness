@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "local-agent-harness"
+version = "0.1.0"
+description = "Local CLI and persistent OpenAI-compatible agent harness with Hermes-style plugins"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.60,<3", "fastapi>=0.115,<1", "uvicorn>=0.34,<1",
+  "typer>=0.15,<1", "rich>=13,<15", "httpx>=0.28,<1",
+  "PyYAML>=6,<7", "jsonschema>=4.23,<5", "websockets>=14,<16"
+]
+
+[project.scripts]
+harness = "harness.cli:app"
+harnessd = "harness.server:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/harness"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["live_browser: requires headed Chrome", "openrouter: consumes authorized model API credits"]
